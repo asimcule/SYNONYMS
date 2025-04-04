@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "SYNONYMS",
+    "version": "1.0",
+    "description": "Gives you a list of similar words you can use for a selected word",
+    "permissions": ["scripting", "activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["main.js"],
+            "run_at": "document_idle"
+        }
+    ]
+}
